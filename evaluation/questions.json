@@ -1,0 +1,27 @@
+
+[
+  {
+    "question": "Which model has three billion parameters?",
+    "expected_source": "model_a.md"
+  },
+  {
+    "question": "Which model is designed for lightweight text generation?",
+    "expected_source": "model_a.md"
+  },
+  {
+    "question": "Which model has seven billion parameters?",
+    "expected_source": "model_b.md"
+  },
+  {
+    "question": "Which model may require more memory because of its size?",
+    "expected_source": "model_b.md"
+  },
+  {
+    "question": "What does retrieval augmented generation retrieve?",
+    "expected_source": "rag_basics.md"
+  },
+  {
+    "question": "Does RAG guarantee that every answer is correct?",
+    "expected_source": "rag_basics.md"
+  }
+]
