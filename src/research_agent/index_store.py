@@ -10,10 +10,11 @@ DB_PATH = "chroma_db"
 COLLECTION_NAME = "research_documents"
 
 
-def build_index(data_dir: str = "data/raw") -> int:
-    chunks = prepare_chunks(data_dir)
+def build_index(data_dir: str = "data/raw", chunk_size: int = 500, overlap: int = 100) -> int:
+    chunks = prepare_chunks(data_dir, chunk_size=chunk_size, overlap=overlap)
 
     if not chunks:
+        
         raise ValueError("No document chunks found.")
 
     # Persistent database saved locally.

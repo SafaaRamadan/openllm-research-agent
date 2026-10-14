@@ -1,27 +1,43 @@
 
 [
   {
-    "question": "Which model has three billion parameters?",
-    "expected_source": "model_a.md"
+    "question": "How many total parameters does Qwen2.5-0.5B-Instruct have?",
+    "expected_source": "qwen25_05b.md"
   },
   {
-    "question": "Which model is designed for lightweight text generation?",
-    "expected_source": "model_a.md"
+    "question": "What is the non-embedding parameter count of Qwen2.5-0.5B-Instruct?",
+    "expected_source": "qwen25_05b.md"
   },
   {
-    "question": "Which model has seven billion parameters?",
-    "expected_source": "model_b.md"
+    "question": "What is the full context length reported for Qwen2.5-0.5B-Instruct?",
+    "expected_source": "qwen25_05b.md"
   },
   {
-    "question": "Which model may require more memory because of its size?",
-    "expected_source": "model_b.md"
+    "question": "Which license is listed for Qwen2.5-0.5B-Instruct?",
+    "expected_source": "qwen25_05b.md"
   },
   {
-    "question": "What does retrieval augmented generation retrieve?",
-    "expected_source": "rag_basics.md"
+    "question": "What is the approximate size of SmolLM2-360M-Instruct?",
+    "expected_source": "smollm2_360m.md"
   },
   {
-    "question": "Does RAG guarantee that every answer is correct?",
-    "expected_source": "rag_basics.md"
+    "question": "What maximum position length is specified in the SmolLM2 configuration?",
+    "expected_source": "smollm2_360m.md"
+  },
+  {
+    "question": "Which architecture is identified in the SmolLM2 configuration?",
+    "expected_source": "smollm2_360m.md"
+  },
+  {
+    "question": "Who published the RAG research paper and when?",
+    "expected_source": "rag_research.md"
+  },
+  {
+    "question": "What is the main idea behind retrieval-augmented generation?",
+    "expected_source": "rag_research.md"
+  },
+  {
+    "question": "Does RAG guarantee that every generated answer is correct?",
+    "expected_source": "rag_research.md"
   }
 ]
