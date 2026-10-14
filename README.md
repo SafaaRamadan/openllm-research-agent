@@ -224,6 +224,3 @@ The current test suite contains three passing tests for the implemented document
 - Add structured logging and more comprehensive API and pipeline tests.
 - Benchmark inference latency and resource usage.
 
-## License
-
-Add a project license before publishing the repository publicly. Review the licenses of the models and dependencies separately.
