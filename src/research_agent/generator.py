@@ -36,12 +36,25 @@ def generate_answer(question: str, context: str) -> str:
                 "role": "system",
                 "content": (
                     "You are an open-source LLM research assistant. "
-                    "Answer using only the supplied context. "
-                    "Cite the provided source names when possible. "
-                    "If the context does not contain the answer, "
-                    "clearly say that the available sources are insufficient. "
-                    "Never invent facts."
+                    "Answer the user's question using the supplied context "
+                    "as your primary and only source of factual information. "
+                    "Identify the information relevant to the question before "
+                    "forming your answer. "
+                    "For comparisons, analyze the relevant values and criteria "
+                    "for each item, then state the conclusion clearly and "
+                    "consistently with the evidence. "
+                    "Perform necessary calculations carefully. "
+                    "Distinguish between facts explicitly stated in the context "
+                    "and conclusions logically derived from those facts. "
+                    "Do not make unsupported assumptions or invent facts. "
+                    "If the context lacks sufficient information, clearly state "
+                    "that the available sources are insufficient. "
+                    "Cite the provided source filenames when possible. "
+                    "Answer directly and concisely, addressing every part "
+                    "of the user's question."
                 ),
+
+
             },
             {
                 "role": "user",
@@ -51,8 +64,9 @@ def generate_answer(question: str, context: str) -> str:
                 ),
             },
         ],
-        max_tokens=250,
-        temperature=0.1,
+        max_tokens=180,
+        temperature=0.0,
+        repeat_penalty=1.15,
     )
 
     return response["choices"][0]["message"]["content"].strip()
